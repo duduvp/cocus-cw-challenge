@@ -1,8 +1,7 @@
-package br.com.cocus.cwchallenge.data.converter
+package br.com.cocus.cwchallenge.data.local.converter
 
-import androidx.room.TypeConverter
-
-import java.util.Date
+import android.arch.persistence.room.TypeConverter
+import java.util.*
 
 object DateConverter {
     @TypeConverter
