@@ -1,7 +1,15 @@
 package br.com.cocus.cwchallenge.presenter.contract
 
 interface MainContract {
-    interface View {}
-    interface Presenter {}
-    interface Model {}
+    interface View {
+        fun initViews()
+    }
+
+    interface Presenter {
+        fun onSearchClick(username: String?)
+    }
+
+    interface Model {
+        fun searchUsers(username: String?)
+    }
 }

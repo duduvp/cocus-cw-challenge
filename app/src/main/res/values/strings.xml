@@ -13,4 +13,6 @@
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="title_completed">Completed</string>
     <string name="title_authored">Authored</string>
+    <string name="search_by_username">Search by username...</string>
+    <string name="click_to_seach_users">Click here to search Users by Username</string>
 </resources>
