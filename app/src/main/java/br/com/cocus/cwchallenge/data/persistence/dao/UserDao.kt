@@ -15,7 +15,7 @@ interface UserDao {
     @Query("SELECT * FROM user ORDER BY search DESC")
     fun queryByLastSearches(): List<User>
 
-    @Query("SELECT * FROM user ORDER BY ranks")
+    @Query("SELECT * FROM user ORDER BY rank")
     fun queryByRank(): List<User>
 
 }

@@ -1,9 +1,9 @@
-package br.com.cocus.cwchallenge.data.persistence.entity
+package br.com.cocus.cwchallenge.data.persistence.entity.dto
 
 import java.util.*
 import kotlin.collections.ArrayList
 
-data class ChallengeDetail(
+data class ChallengeDetailDTO(
         val id: String,
         val name: String,
         val slug: String,
@@ -12,9 +12,9 @@ data class ChallengeDetail(
         val approvedAt: Date,
         val languages: ArrayList<String>,
         val url: String,
-        val rank: RankMin,
-        val createdBy: CreatedOrApproved,
-        val approvedBy: CreatedOrApproved,
+        val rank: RankMinDTO,
+        val createdBy: CreatedOrApprovedDTO,
+        val approvedBy: CreatedOrApprovedDTO,
         val description: String,
         val totalAttempts: Int,
         val totalCompleted: Int,

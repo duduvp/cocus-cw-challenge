@@ -6,10 +6,10 @@ interface MainContract {
     }
 
     interface Presenter {
-        fun onSearchClick(username: String?)
+        fun onSearchClick(username: String)
     }
 
     interface Model {
-        fun searchUsers(username: String?)
+        fun searchUsers(username: String)
     }
 }

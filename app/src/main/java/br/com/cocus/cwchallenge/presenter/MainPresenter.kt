@@ -13,7 +13,7 @@ class MainPresenter(mainView: MainActivity) : MainContract.Presenter {
         view.initViews()
     }
 
-    override fun onSearchClick(username: String?) {
+    override fun onSearchClick(username: String) {
         model.searchUsers(username)
     }
 

@@ -1,19 +1,24 @@
 package br.com.cocus.cwchallenge.data.api
 
-import br.com.cocus.cwchallenge.data.local.entity.UserResult
+import br.com.cocus.cwchallenge.data.persistence.entity.dto.ChallengeDetailDTO
+import br.com.cocus.cwchallenge.data.persistence.entity.dto.AuthoredDTO
+import br.com.cocus.cwchallenge.data.persistence.entity.dto.CompletedDTO
+import br.com.cocus.cwchallenge.data.persistence.entity.dto.UserDTO
 import io.reactivex.Observable
+
 import retrofit2.http.GET
+import retrofit2.http.Path
 
 interface CodeWarsApiDef {
     @GET("users/{username}")
-    fun getUsers() : Observable<UserResult>
+    fun getUser(@Path("username") username : String) : Observable<UserDTO>
 
     @GET("users/{user}/code-challenges/completed?page=0")
-    fun getCompletedChallenges() : Observable<UserResult>
+    fun getCompletedChallenges(@Path("user") user : String) : Observable<CompletedDTO>
 
     @GET("users/{user}/code-challenges/authored")
-    fun getAuthoredChallenges() : Observable<UserResult>
+    fun getAuthoredChallenges(@Path("user") user : String) : Observable<AuthoredDTO>
 
-    @GET("code-challenges/{:id}")
-    fun getChallengeDetail() : Observable<UserResult>
+    @GET("code-challenges/{id}")
+    fun getChallengeDetail(@Path("id") id : String) : Observable<ChallengeDetailDTO>
 }

@@ -1,6 +1,6 @@
-package br.com.cocus.cwchallenge.data.persistence.entity
+package br.com.cocus.cwchallenge.data.persistence.entity.dto
 
-data class DataAuthored(
+data class DataAuthoredDTO(
         val id: String,
         val name: String,
         val description: String,

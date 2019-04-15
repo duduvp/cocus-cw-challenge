@@ -1,5 +1,10 @@
 package br.com.cocus.cwchallenge.data.persistence.entity.dto
 
-import br.com.cocus.cwchallenge.data.persistence.entity.User
+import com.google.gson.annotations.SerializedName
 
-data class UserResult(var result: List<User>)
+data class UserDTO (
+    @SerializedName("name")
+    val name: String = "",
+    @SerializedName("ranks")
+    val ranks : RanksDTO = RanksDTO()
+)

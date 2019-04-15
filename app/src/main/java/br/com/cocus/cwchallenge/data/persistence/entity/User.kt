@@ -8,9 +8,7 @@ import java.util.Date
 @Entity(tableName = "user")
 data class User(
         @PrimaryKey
-        @SerializedName("name")
         val name: String,
-        @SerializedName("rank")
-        val rank: Long,
+        val rank: Long, //TODO FUNCTION TO GET RANK FROM API
         val search: Date
 )
