@@ -1,4 +1,4 @@
-package br.com.cocus.cwchallenge.data.local.converter
+package br.com.cocus.cwchallenge.data.persistence.converter
 
 import android.arch.persistence.room.TypeConverter
 import java.util.*

@@ -1,4 +1,4 @@
-package br.com.cocus.cwchallenge.data.local.entity
+package br.com.cocus.cwchallenge.data.persistence.entity
 
 import java.util.*
 import kotlin.collections.ArrayList

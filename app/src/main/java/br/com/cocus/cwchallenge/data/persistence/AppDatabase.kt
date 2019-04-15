@@ -1,13 +1,13 @@
-package br.com.cocus.cwchallenge.data.local
+package br.com.cocus.cwchallenge.data.persistence
 
 import android.arch.persistence.room.Database
 import android.arch.persistence.room.Room
 import android.arch.persistence.room.RoomDatabase
 import android.arch.persistence.room.TypeConverters
 import android.content.Context
-import br.com.cocus.cwchallenge.data.local.converter.DateConverter
-import br.com.cocus.cwchallenge.data.local.dao.UserDao
-import br.com.cocus.cwchallenge.data.local.entity.User
+import br.com.cocus.cwchallenge.data.persistence.converter.DateConverter
+import br.com.cocus.cwchallenge.data.persistence.dao.UserDao
+import br.com.cocus.cwchallenge.data.persistence.entity.User
 
 @Database(
         entities = [User::class],

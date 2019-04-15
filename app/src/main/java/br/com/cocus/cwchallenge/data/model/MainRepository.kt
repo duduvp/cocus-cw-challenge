@@ -1,4 +1,4 @@
-package br.com.cocus.cwchallenge.data
+package br.com.cocus.cwchallenge.data.model
 
 import br.com.cocus.cwchallenge.presenter.contract.MainContract
 

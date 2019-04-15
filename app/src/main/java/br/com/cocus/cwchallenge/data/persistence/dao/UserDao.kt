@@ -1,7 +1,7 @@
-package br.com.cocus.cwchallenge.data.local.dao
+package br.com.cocus.cwchallenge.data.persistence.dao
 
 import android.arch.persistence.room.*
-import br.com.cocus.cwchallenge.data.local.entity.User
+import br.com.cocus.cwchallenge.data.persistence.entity.User
 
 @Dao
 interface UserDao {

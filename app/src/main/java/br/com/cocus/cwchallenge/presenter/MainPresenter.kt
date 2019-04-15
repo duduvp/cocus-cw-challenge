@@ -1,6 +1,6 @@
 package br.com.cocus.cwchallenge.presenter
 
-import br.com.cocus.cwchallenge.data.MainRepository
+import br.com.cocus.cwchallenge.data.model.MainRepository
 import br.com.cocus.cwchallenge.presenter.contract.MainContract
 import br.com.cocus.cwchallenge.ui.main.MainActivity
 
